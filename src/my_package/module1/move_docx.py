@@ -4,7 +4,7 @@ import shutil
 
 from colorama import Back, Fore, Style, init
 
-from my_package.module1.nrb_ticket import get_nrb_ticket
+from src.my_package.module1.nrb_ticket import get_nrb_ticket
 
 
 async def move_docx(file_name=None):

@@ -5,7 +5,7 @@ import re
 from colorama import Fore, Style, init
 from docx import Document
 
-from my_package.utils.decorators import remove_duplicates
+from src.my_package.utils.decorators import remove_duplicates
 
 
 def find_nrb_docx():
