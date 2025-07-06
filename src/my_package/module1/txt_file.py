@@ -41,6 +41,9 @@ async def create_or_update_ticket_file():
 
     # Ensure ticket_number doesn't contain invalid filename characters
     ticket_number = re.sub(r'[\\/*?:"<>|]', "_", ticket_number.strip())
+    ticket_number = ticket_number.replace("O", "0").replace(
+        " ", ""
+    )  # Replace 'o' with '0' for consistency
 
     # Ensure ticket status is only "wip" or "resolved"
     if new_ticket_status.lower() not in ["wip", "resolved"]:
